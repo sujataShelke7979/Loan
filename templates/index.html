@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Loan Prediction</title>
+	<style>
+		body {
+		    background-image: url("https://www.indusind.com/iblogs/wp-content/uploads/Things-to-Keep-in-Mind-Before-Taking-a-Personal-Loan.jpg");
+		    background-repeat: no-repeat;
+		    background-size: cover;
+            color: white;
+        }
+        h1, label {
+            text-align: center;
+        }
+		
+    </style>
+</head>
+<body>
+        
+     <h1>WELCOME FOR LOAN</h1>
+     <form method="GET" action="/predict_charges">
+        <div id='credit_policy'></div>
+        <label>credit_policy:</label>
+        <input type="text" name='credit_policy'>
+        </select>
+    </div>
+        <br>
+        <br>
+             <label>int_rate:</label>
+             <input type="text" name="int_rate">
+             </select>
+        <br>
+        <br>
+             <label>installment:</label>
+             <input type="text" name="installment">
+             </select>
+        <br>
+        <br>
+             <label>log_annual_inc:</label>
+             <input type="text" name="log_annual_inc">
+             </select>
+        <br>
+        <br>
+             <label>dti:</label>
+             <input type="text" name="dti">
+             </select>
+        <br>
+        <br>
+             <label>fico:</label>
+             <input type="text" name="fico">
+             </select>
+        <br>
+        <br>
+             <label>days_with_cr_line:</label>
+             <input type="text" name="days_with_cr_line">
+             </select>
+         <br>
+         <br>
+         <label>revol_bal:</label>
+             <input type="text" name="revol_bal">
+             </select>
+         <br>
+         <br>
+         <label>revol_util:</label>
+             <input type="text" name="revol_util">
+             </select>
+         <br>
+         <br>
+         <label>inq_last_6mths:</label>
+             <input type="text" name="inq_last_6mths">
+             </select>
+         <br>
+         <br>
+         <label>delinq_2yrs:</label>
+             <input type="text" name="delinq_2yrs">
+             </select>
+         <br>
+         <br>
+         <label>pub_rec:</label>
+             <input type="text" name="pub_rec">
+             </select>
+         <br>
+         <br>
+         <label>purpose:</label>
+             <input type="text" name="purpose">
+             </select>
+         <br>
+         <br>
+
+	<input type = "submit" value = "SUBMIT">
+        
+        <br>
+        <br>
+
+
+	</form>
+	<p><b>{{prediction}}.</b></p>
+        
+</body>
+</html>

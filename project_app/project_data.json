@@ -1,0 +1,1 @@
+{"columns": ["credit_policy", "int_rate", "installment", "log_annual_inc", "dti", "fico", "days_with_cr_line", "revol_bal", "revol_util", "inq_last_6mths", "delinq_2yrs", "pub_rec", "purpose_all_other", "purpose_credit_card", "purpose_debt_consolidation", "purpose_educational", "purpose_home_improvement", "purpose_major_purchase", "purpose_small_business"]}
